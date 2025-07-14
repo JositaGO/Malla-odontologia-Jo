@@ -1,0 +1,32 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f9fafe;
+  color: #333;
+  padding: 2rem;
+}
+h1 {
+  color: #4aa7c0;
+  text-align: center;
+}
+#malla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+.ramo {
+  background-color: #e3f6f5;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ramo.locked {
+  background-color: #f1f1f1;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.ramo.completed {
+  background-color: #b2f7ef;
+  border-color: #5ac0b1;
+}
